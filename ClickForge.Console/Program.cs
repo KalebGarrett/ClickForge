@@ -190,6 +190,7 @@ while (true)
             break;
         }
 
+        // Add user input for stopping loop or if automation only loops once, go back to menu
         profileRepository.Load(profileName!);
         
         continue;

@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ClickForge.Engine\ClickForge.Engine.csproj" />
       <ProjectReference Include="..\ClickForge.Models\ClickForge.Models.csproj" />
     </ItemGroup>
 

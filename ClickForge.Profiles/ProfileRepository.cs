@@ -1,5 +1,6 @@
 ﻿using ClickForge.Models;
 using System.Text.Json;
+using ClickForge.Engine;
 
 namespace ClickForge.Profiles;
 
@@ -16,9 +17,9 @@ public class ProfileRepository
         File.WriteAllText($@"{Directories.ProfileDirectory}\{profile.Name}.json", json);
     }
 
-    public void Load(string name)
+    public async Task Load(string name)
     {
-        var json = File.ReadAllText($@"{Directories.ProfileDirectory}\{name}.json");
+        var json = await File.ReadAllTextAsync($@"{Directories.ProfileDirectory}\{name}.json");
 
         var profile = JsonSerializer.Deserialize<Profile>(json);
         
@@ -29,6 +30,9 @@ public class ProfileRepository
         Console.WriteLine($"Input Type: {profile.Action.InputType}");
         Console.WriteLine($"Input Data: {profile.Action.InputData}");
         Console.WriteLine($"Delay: {profile.Action.Delay}\n");
+        
+        var automation = new ProfileAutomation();
+        await automation.RunProfile(profile);
     }
 
     public void Delete(string name) =>
