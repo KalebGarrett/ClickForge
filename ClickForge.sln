@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickForge.Models", "ClickF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickForge.Profiles", "ClickForge.Profiles\ClickForge.Profiles.csproj", "{3993076C-FCD4-40BD-866B-64F57203ABA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickForge.Engine", "ClickForge.Engine\ClickForge.Engine.csproj", "{285C42ED-18D5-4415-9FAC-C122A6BD0714}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{3993076C-FCD4-40BD-866B-64F57203ABA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3993076C-FCD4-40BD-866B-64F57203ABA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3993076C-FCD4-40BD-866B-64F57203ABA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285C42ED-18D5-4415-9FAC-C122A6BD0714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285C42ED-18D5-4415-9FAC-C122A6BD0714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285C42ED-18D5-4415-9FAC-C122A6BD0714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285C42ED-18D5-4415-9FAC-C122A6BD0714}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
